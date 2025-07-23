@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FiveM PvP Server UI</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+
+</head>
+<body >
+<div id="ui-wrapper" style="display: none;">
+  <div class="container">
+    <nav class="navbar">
+      <button onclick="showPage('lobby')">Lobby</button>
+      <button onclick="showPage('leaderboard')">Leaderboard</button>
+      <button onclick="showPage('location')">Location</button>
+      <button id="addWeaponsBtn" onclick="showPage('weapon')">Weapon</button>
+
+      <button onclick="showPage('comingsoon')" disabled='true'>Coming Soon</button>
+    </nav>
+
+    <div class="page" id="lobby">Welcome to </div>
+    
+ 
+    
+    <div class="page" id="location">
+      <div class="location-list" id="locationList"></div>
+    </div>
+
+
+    <div class="page" id="weapon">
+      <div class="weapons-container" id="weaponsList"></div>
+    </div>
+  </div>
+   
+
+</div>  
+<div id="notification" class="notification hidden"></div>
+</body>
+</html>
